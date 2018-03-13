@@ -62,6 +62,12 @@ function allSymbolsHandled(state, alphabet) {
   );
 }
 
+/**
+ * Check that all states a state transitions to actually exist
+ * 
+ * @param {any} state 
+ * @param {any} states 
+ */
 function allStatesExists(state, states) {
   return Object.values(state).every(otherState => states[otherState] != null);
 }
