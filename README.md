@@ -1,4 +1,4 @@
-# automata
+# automatamata
 
 > Javascript classes for working with DFA's and NFA's
 
