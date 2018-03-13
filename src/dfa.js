@@ -57,6 +57,11 @@ const DFA = (() => {
     return !stateDigraph.pathsExist({ to, from });
   };
 
+  /**
+   * Construct a digraph from the DFA's state transitions
+   * 
+   * @returns {DiGraph}
+   */
   DFA.prototype.toDiGraph = function toDiGraph() {
     const diGraph = new DiGraph();
     for (const [fromState, transitions] of Object.entries(this.states)) {
