@@ -19,7 +19,6 @@ const DFA = (() => {
       throw new Error(`Invalid DFA definition: ${reason}`);
     }
 
-    Object.assign(this, definition);
     this.alphabet = definition.alphabet;
     this.initialState = definition.initialState;
     this.acceptingStates = definition.acceptingStates;
