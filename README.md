@@ -2,7 +2,40 @@
 
 > Javascript classes for working with DFA's and NFA's
 
-## DFA _(Deterministic Finite Automata)_
+## Installation
+
+```
+$ npm install automatamata
+```
+
+or
+
+```
+$ yarn add automatamata
+```
+
+## Contributing
+
+First, get the package: 
+```
+$ git clone https://github.com/chrfrasco/automata
+```
+
+Run tests:
+
+```
+$ npm run test
+```
+
+Tests can also be run in watch mode by passing the `--watch` flag:
+
+```
+$ npm run test -- --watch
+```
+
+## API
+
+### DFA _(Deterministic Finite Automata)_
 
 The main attraction. Defined using a definition object, which has the following structure:
 
@@ -35,3 +68,8 @@ The definition object is validated when the dfa is constructed, and an error is 
 - `accepts` - true if the given string is accepted by the DFA
 - `languageIsEmpty` - true if the language defined by the DFA is empty - that is, none of the accepting states are reachable from the starting state
 - `toDiGraph` - construct a digraph from the DFA's state transitions
+
+## Tasks
+
+- [ ] Add `languageIsInfinite` method to `DFA`
+- [ ] Add `NFA` class
